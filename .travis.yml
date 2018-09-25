@@ -17,6 +17,8 @@ cache:
 
 before_install:
   - npm install -g hexo-cli
+  - git config user.name "calvin"
+  - git config user.email "calvin_cheung@outlook.com"
 
 # Start: Build Lifecycle
 install:
@@ -30,11 +32,11 @@ script:
 
 # 设置git提交名，邮箱
 after_script:
-  - git config user.name "calvin"
-  - git config user.email "calvin_cheung@outlook.com"
-  # 替换同目录下的_config.yml文件中repo
-  - sed -i "" "s/GH_TOKEN/${GH_TOKEN}/g" ./_config.yml
-  - hexo d
+  - cd ./public
+  - git init
+  - git add --all .
+  - git commit -m "Travis CI Auto Builder"
+  - git push --quiet --force https://${GH_TOKEN}@github.com/calvingit/calvingit.github.io.git master
 
 # End: Build LifeCycle
 notifications:
