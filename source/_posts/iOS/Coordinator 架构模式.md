@@ -1,6 +1,6 @@
 
 ---
-title: 【学习】Coordinator 架构模式
+title: Coordinator 架构模式
 date: 2018-09-25 23:51:53
 category: iOS
 ---

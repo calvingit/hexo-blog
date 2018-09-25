@@ -1,5 +1,5 @@
 ---
-title: 【学习】Child视图控制器的模块化妙用
+title: Child视图控制器的模块化妙用
 date: 2018-09-25 23:51:53
 category: iOS
 ---

@@ -1,5 +1,5 @@
 ---
-title: 【学习】Swift中使用工厂方法的依赖注入
+title: Swift中使用工厂方法的依赖注入
 date: 2018-09-25 23:51:53
 category: iOS
 ---

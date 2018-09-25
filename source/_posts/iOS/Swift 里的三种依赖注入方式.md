@@ -1,6 +1,6 @@
 
 ---
-title: 【学习】Swift 里的三种依赖注入方式
+title: Swift 里的三种依赖注入方式
 date: 2018-09-25 23:51:53
 category: iOS
 ---

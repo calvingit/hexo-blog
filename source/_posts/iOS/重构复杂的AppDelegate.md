@@ -1,5 +1,5 @@
 ---
-title: 【学习】重构复杂的AppDelegate
+title: 重构复杂的AppDelegate
 date: 2018-09-25 23:51:53
 category: iOS
 ---
