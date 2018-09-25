@@ -33,7 +33,7 @@ after_script:
   - git config user.name "calvin"
   - git config user.email "calvin_cheung@outlook.com"
   # 替换同目录下的_config.yml文件中repo
-  - sed -i "" "s/git@github.com:/https:\/\/${GH_TOKEN}@github.com\//g" ./_config.yml
+  - sed -i "" "s/GH_TOKEN/${GH_TOKEN}/g" ./_config.yml
   - hexo d
 
 # End: Build LifeCycle
