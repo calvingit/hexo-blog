@@ -4,8 +4,6 @@ date: 2018-09-25 23:51:53
 category: Softwares
 ---
 
-# linux 下各文件夹的结构说明及用途介绍
-
 /bin：二进制可执行命令。  
 /dev：设备特殊文件。  
 /etc：系统管理和配置文件。  
@@ -30,6 +28,8 @@ category: Softwares
 /usr/src：源代码，linux 内核的源代码就放在/usr/src/linux 里。  
 /usr/local/bin：本地增加的命令。  
 /usr/local/lib：本地增加的库根文件系统。
+
+<!-- more -->
 
 通常情况下，根文件系统所占空间一般应该比较小，因为其中的绝大部分文件都不需要经常改动，而且包括严格的文件和一个小的 不经常改变的文件系统不容易损坏。除了可能的一个叫/vmlinuz 标准的系统引导映像之外，根目录一般不含任何文 件。所有其他文件在根文件系统的子目录中。
 
@@ -137,7 +137,8 @@ category: Softwares
    个不同的 spool 在/var/spool 下有自己的子目录，例如，用户的邮箱就存放在/var/spool/mail 中。
 8. /var/tmp：比/tmp 允许更大的或需要存在较长时间的临时文件。注意系统管理 员可能不允许/var/tmp 有很旧的文件。
 
-/proc 文件系统
+## /proc 文件系统
+
 /proc 文件系统是一个伪的文件系统，就是说它是一个实际上不存在的目录，因而这是一个非 常特殊的目录。它并不存在于某个磁盘上，而是由核心在内存中产生。这个目录用于提供关于系统的信息。下面说明一些最重要的文件和目录(/proc 文件系统 在 proc man 页中有更详细的说明)。
 
 1. /proc/x：关于进程 x 的信息目录，这 x 是这一进程的标识号。每个进程在 /proc 下有一个名为自己进程号的目录。
@@ -161,12 +162,16 @@ category: Softwares
 17. /proc/uptime：系统启动的时间长度。
 18. /proc/version：核心版本。
 
-/usr/local 下一般是你安装软件的目录，这个目录就相当于在 windows 下的 programefiles 这个目录
+## /usr/local
 
-/opt 这个目录是一些大型软件的安装目录，或者是一些服务程序的安装目录
+下一般是你安装软件的目录，这个目录就相当于在 windows 下的 programefiles 这个目录
+
+## /opt
+
+这个目录是一些大型软件的安装目录，或者是一些服务程序的安装目录
 
 举个例子：刚才装的测试版 firefox，就可以装到/opt/firefox_beta 目录下，/opt/firefox_beta 目录下面就包含了运 行 firefox 所需要的所有文件、库、数据等等。要删除 firefox 的时候，你只需删除/opt/firefox_beta 目录即可，非常简单。
 
-**/usr/local**
+## /usr/local
 
 这里主要存放那些手动安装的软件，即 不是通过“新立得”或 apt-get 安装的软件 。 它和/usr 目录具有相类似的目录结构 。让软件包管理器来管理/usr 目录，而把自定义的脚本(scripts)放到/usr/local 目录下面，我想这应该是个不错的主意。
