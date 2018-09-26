@@ -6,6 +6,8 @@ category: iOS
 
 Every new architecture that comes out, either [iOS](https://github.com/onmyway133/fantastic-ios-architecture) or [Android](https://github.com/onmyway133/fantastic-android-architecture), makes me very excited. I'm always looking for ways to structure apps in a better way. But after some times, I see that we're too creative in creating architecture, aka constraint, that is too far away from the platform that we're building. I often think "If we're going too far from the system, then it's very hard to go back"
 
+<!-- more -->
+
 I like things that embrace the system. One of them is [Coordinator](http://khanlou.com/2015/10/coordinators-redux/) which helps in encapsulation and navigation. Thanks to my friend [Vadym](https://github.com/vadymmarkov/) for showing me `Coordinator` in action.
 
 The below screenshot from [@khanlou](https://github.com/khanlou) 's [talk](https://www.youtube.com/watch?v=a1g3k3NObkE) at CocoaHeads Stockholm clearly says many things about `Coordinator`

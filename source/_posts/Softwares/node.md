@@ -12,6 +12,8 @@ category: Softwares
 - 安装 node，使用 **lts** 稳定版本: `nvm install --lts`。
   > 如果已经用 nvm 安装过 node 了，现在要升级 node 并把已经安装过的全局 packages 一并迁移到新版本，那么需要使用一下命令：`nvm install v8.4.0 --reinstall-packages-from=v6.10.0`
 
+<!-- more -->
+
 ## 配置淘宝镜像
 
 把 registry 和 disturl 都改成淘宝的镜像，下载速度上更快。

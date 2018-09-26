@@ -4,9 +4,9 @@ date: 2018-09-25 23:51:53
 category: iOS
 ---
 
-# Injection 实时编译加载工具
-
 [Injection](http://johnholdsworth.com/injection.html) 是一个 Xcode 的注入插件，独立的 Mac App。关键功能是实时编译加载，源文件的修改立即反应到界面上。因为它不需要编译整个工程，只是当前的`ViewController`，所以它有相当于写网页界面一样快的速度。
+
+<!-- more -->
 
 ## 基本使用方法
 

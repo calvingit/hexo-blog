@@ -4,7 +4,9 @@ date: 2018-09-25 23:51:53
 category: Softwares
 ---
 
-    在我的 macOS 日常使用中，真正经常使用的 GUI 软件不外乎 Xcode、Chrome、QQ、SourceTree等，其他的操作大部分还是基于命令行来的，命令行的软件当然是标配的 [iTerm2](https://www.iterm2.com/downloads.html) + [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh.git) 套装了。很多零碎的操作，如果要特别找一个 GUI 软件的话也比较难，毕竟不比 Windows 上庞大的软件数量，有时用几个简单的命令会让你的工作效率增加数倍。
+在我的 macOS 日常使用中，真正经常使用的 GUI 软件不外乎 Xcode、Chrome、QQ、SourceTree 等，其他的操作大部分还是基于命令行来的，命令行的软件当然是标配的 [iTerm2](https://www.iterm2.com/downloads.html) + [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh.git) 套装了。很多零碎的操作，如果要特别找一个 GUI 软件的话也比较难，毕竟不比 Windows 上庞大的软件数量，有时用几个简单的命令会让你的工作效率增加数倍。
+
+<!-- more -->
 
 # 查看占用某端口的进程
 

@@ -15,6 +15,8 @@ category: iOS
 - [快速架构单向数据流的 Realm 应用](https://news.realm.io/cn/news/unidirectional-data-flow-in-swift/)
 - [ReactorKit：iOS 单向数据流架构](http://www.infoq.com/cn/news/2017/05/ReactorKit-iOS-data-flow-danxian)
 
+  <!-- more -->
+
 # MVVM
 
 ![MVVM](https://objccn.io/images/issues//issue-13/mvvm.png)

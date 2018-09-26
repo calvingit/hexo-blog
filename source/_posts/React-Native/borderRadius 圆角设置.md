@@ -24,3 +24,5 @@ overflow: auto;
 /* 规定从父元素继承overflow属性的值 */
 overflow: inherit;
 ```
+
+<!-- more -->

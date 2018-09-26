@@ -13,6 +13,8 @@ category: Softwares
 3. 到目录`~/.Genymobile/Genymotion/ova`，找到`.partial`文件，这个是刚刚未下载完成的缓存文件
 4. 用迅雷下载文件更快
 
+<!-- more -->
+
 ## 虚拟机镜像 ova 文件下载
 
 Genymotion ova 下载的 url 地址为：**http://dl.genymotion.com/dists/xxx/ova/xxxxxx**,可复制下载地址到迅雷中下载，速度会快很多,其中 xxx 为虚拟设备对应的 Android 系统版本号,如 4.2.2,7.0.0(4.3 则 xxx 为 4.3,5.0 则 xxx 为 5.0.0)，xxxxxx 为 ova 的文件名，如:

@@ -24,6 +24,8 @@ class BaseViewController: UIViewController {
 }
 ```
 
+<!-- more -->
+
 初看这一切都很方便，但是时间一长，你就会把大量的东西都堆在`BaseViewController`里面，就会出现**Massive View Controller**的问题，导致很难维护。
 
 > 虽然表面上看起来`BaseViewController`的子类并不是**Massive**，通用功能代码都在父类，但由于继承的特性，子类也依赖了一些不该有的东西。并且假如需要单独测试某个 View Controller，那就必须依赖`BaseViewController`，而`BaseViewController`又包含了很多其他的依赖，很不方便。

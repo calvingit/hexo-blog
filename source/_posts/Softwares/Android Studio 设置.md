@@ -4,7 +4,7 @@ date: 2018-09-25 23:51:53
 category: Softwares
 ---
 
-    版本：Android Studio 3.0
+版本：Android Studio 3.0
 
 # 修改 SDK 镜像地址
 
@@ -21,6 +21,8 @@ http://mirrors.neusoft.edu.cn/android/repository/sys-img/android/sys-img.xml
 http://mirrors.neusoft.edu.cn/android/repository/sys-img/google_apis/sys-img.xml
 http://mirrors.neusoft.edu.cn/android/repository/sys-img/google_apis_playstore/sys-img.xml
 ```
+
+<!-- more -->
 
 # 解决 Gradle 下载卡主失败的问题
 

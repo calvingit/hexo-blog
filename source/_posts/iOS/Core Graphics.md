@@ -15,6 +15,8 @@ category: iOS
 - lengths – 指明虚线是如何交替绘制，具体看例子
 - count – lengths 数组的长度
 
+  <!-- more -->
+
 例如：
 
 ```

@@ -12,6 +12,8 @@ category: iOS
 
 下面我们来看一下 Swift 中的`struct`、`class`、`enum`是如何组合的。
 
+<!-- more -->
+
 ## Struct 组合
 
 假设我们开发一个社交 app，它有`User`和`Friend`两个模型。`User`代表 app 里面的所有类型用户，`Friend`包含一个用户和成为朋友的日期。

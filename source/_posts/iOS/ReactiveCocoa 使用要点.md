@@ -4,13 +4,13 @@ date: 2018-09-25 23:51:53
 category: iOS
 ---
 
-# ReactiveCocoa 使用要点
-
 现在改名为[ReactiveObjC](https://github.com/ReactiveCocoa/ReactiveObjC)。
 
-## 代替 delegate
+# 代替 delegate
 
 使用`rac_signalForSelector: fromProtocol:`代替 delegate 的方法时,切记要将 self 设为代理这句话放在订阅代理信号的后面写,否则会无法执行。
+
+<!-- more -->
 
 ```objective-c
   //这里订阅收到的是一个x,当一个页面存在多个tableview时,我们可以对x进行判断看是哪个tableview
@@ -32,7 +32,7 @@ tableview.delegate = self;
 
 这句话是没什么作用的，除非你先通过`tableview.delegate = nil`释放掉 delegate，再次设置。
 
-## 代替 Notification
+# 代替 Notification
 
 一般需要使用`takeUntil:self.rac_willDeallocSignal`来对通知进行释放掉。
 

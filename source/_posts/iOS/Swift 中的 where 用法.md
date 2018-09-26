@@ -1,11 +1,9 @@
-
 ---
 title: Swift 中的 where 用法
 date: 2018-09-25 23:51:53
 category: iOS
 ---
 
-    
     `where` 是个强大的关键字，用来过滤值。
 
 # `switch`里面的用法
@@ -19,6 +17,8 @@ enum Action {
     case logout
 }
 ```
+
+<!-- more -->
 
 我们可以用`where` 来过滤特殊年龄的情况：
 

@@ -12,6 +12,8 @@ category: Softwares
 sudo apt-get install python-pip && export LC_ALL=C && pip install setuptools && pip install shadowsocks
 ```
 
+<!-- more -->
+
 # 配置
 
 创建配置文件`/etc/shadowsocks.json`，内容如下:

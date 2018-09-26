@@ -1,11 +1,9 @@
-
 ---
 title: UISwitch
 date: 2018-09-25 23:51:53
 category: iOS
 ---
 
-    
 # 修改开关的背景色
 
 修改开的背景色：
@@ -13,6 +11,8 @@ category: iOS
 ```
 mSwitch.onTintColor = onColor
 ```
+
+<!-- more -->
 
 修改关的背景色：
 

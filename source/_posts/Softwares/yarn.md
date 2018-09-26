@@ -13,6 +13,8 @@ category: Softwares
 - 如果 node 是用 nvm 等第三方工具管理的，应该排除安装 node：
   `brew install yarn --without-node`
 
+<!-- more -->
+
 # 配置 registry
 
 官方的：

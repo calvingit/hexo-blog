@@ -20,6 +20,8 @@ iOS 的 CALayer 到目前为止不支持 AutoLayout 也不支持 autoresizingMas
 @end
 ```
 
+<!-- more -->
+
 使用的时候可以像这样：
 
 ```objective-c

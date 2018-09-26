@@ -1,13 +1,12 @@
-
 ---
 title: UIPickerView
 date: 2018-09-25 23:51:53
 category: iOS
 ---
 
-    
 # 修改分割线颜色
-分割线的高度是0.5，不是1
+
+分割线的高度是 0.5，不是 1
 
 ```objective-c
 //设置分割线的颜色为白色
@@ -17,6 +16,8 @@ for (UIView *subview in self.pickerView.subviews) {
     }
 }
 ```
+
+<!-- more -->
 
 # 修改文本的颜色等属性
 

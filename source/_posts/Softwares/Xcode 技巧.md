@@ -9,6 +9,7 @@ category: Softwares
 
 在 `Scheme`—`Arguments`—`Environment Variables`，添加`Name`为`OS_ACTIVITY_MODE`，`Value`设为`Disable`。
 
+<!-- more -->
 
 # 打印App的加载时长
 

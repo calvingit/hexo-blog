@@ -4,9 +4,7 @@ date: 2018-09-25 23:51:53
 category: iOS
 ---
 
-    > 作者是[Soroush Khanlou](http://khanlou.com)，阅读[原文](http://khanlou.com/2015/10/coordinators-redux/)。
-
-# Coordinator 架构模式
+> 阅读[原文](http://khanlou.com/2015/10/coordinators-redux/)。
 
 2015 年 1 月，[Soroush Khanlou](http://khanlou.com)提出来[Coordinator](http://khanlou.com/2015/01/the-coordinator/)这个概念。同年 10 月份，他参加了 NSSpain 演讲，主题就是讲`Coordinator`架构，可以在线观看演讲的[PPT](https://www.slideshare.net/secret/3jJlEE1weo0RRl)和[视频](https://vimeo.com/144116310)。
 
@@ -17,6 +15,8 @@ category: iOS
 在指导我们把代码放在正确的地方这方面，Apple 几乎没做什么事，完全由开发者自己去决定如何组织 app。很显然地，首选的地方就是 app 的 delegate。
 
 **App Delegate**是 App 的入口，它的主要责任应该是从操作系统传递消息给 App 的子系统。不幸的是，正因为它处在所有东西的中心位置，所以就极其容易把很多东西放在这里。受这种策略影响的情况之一就是**Root**视图控制器的设置。如果这个**Root**视图控制器又是一个 `UITabBarController`的话，那就得设置`UITabBarController`的所有子视图控制器，而，app delegate 就是一个好地方。
+
+<!-- more -->
 
 我做的第一个 app 里，我把**Root**视图控制器的设置都放在 app delegate 中（我多刚开始做 iOS 开发的人都和我一样）。但这些代码真的不属于那里，这么做只是为了方便。
 

@@ -4,7 +4,7 @@ date: 2018-09-25 23:51:53
 category: iOS
 ---
 
-    > 原文[在此](https://www.swiftbysundell.com/posts/dependency-injection-using-factories-in-swift)，作者是[John Sundell](https://twitter.com/johnsundell)
+> 阅读[原文](https://www.swiftbysundell.com/posts/dependency-injection-using-factories-in-swift)，作者是[John Sundell](https://twitter.com/johnsundell)
 
 # Swift 中使用工厂方法的依赖注入
 
@@ -18,6 +18,8 @@ class UserManager {
     }
 }
 ```
+
+<!-- more -->
 
 这就导致了一个**Massive**的初始化器，以及复杂的依赖管理问题。
 

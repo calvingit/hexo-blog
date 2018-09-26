@@ -11,6 +11,8 @@ category: Softwares
 - `curl`
 - `gpg2`
 
+<!-- more -->
+
 然后使用运行命令安装：
 
 ```bash
@@ -31,7 +33,7 @@ rvm install 2.3.1
 
 切换 ruby 版本：
 
-```
+```bash
 rvm use 2.4.1
 ```
 
@@ -39,7 +41,7 @@ rvm use 2.4.1
 
 在`~/.gemrc`配置文件里面加入下面一句话：
 
-```
+```bash
 gem: --no-rdoc --no-ri
 ```
 

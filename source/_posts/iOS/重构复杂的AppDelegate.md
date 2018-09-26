@@ -10,6 +10,8 @@ category: iOS
 
 我们给每一个 app delegate 责任定义一个命令，命令的名称表明了目的。
 
+<!-- more -->
+
 ```swift
 protocol Command {
     func execute()

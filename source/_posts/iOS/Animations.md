@@ -19,6 +19,8 @@ UIView.animate(withDuration: 0.3,
                completion: nil)
 ```
 
+<!-- more -->
+
 当涉及到要修改`multiplier`时，则必须先移除掉约束或者禁用，然后再添加新约束：
 
 ```swift

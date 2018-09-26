@@ -1,12 +1,10 @@
-
 ---
 title: UIBarButtonItem
 date: 2018-09-25 23:51:53
 category: iOS
 ---
 
-    
-# 自定义CustomView时大小约束添加
+# 自定义 CustomView 时大小约束添加
 
 ```objective-c
 JCNavigationItemView *itemView = [[JCNavigationItemView alloc] init];
