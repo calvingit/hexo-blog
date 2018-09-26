@@ -11,7 +11,7 @@ iOS 的 CALayer 到目前为止不支持 AutoLayout 也不支持 autoresizingMas
 除了在每次 layoutSubview 的时候改变 layer 的 frame，还可以用 UIView 包装一下：
 
 ```objective-c
-@implementation BackgrundView
+@implementation BackgroundView
 
 +(Class)layerClass{
     return [CAGradientLayer class];

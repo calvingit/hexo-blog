@@ -246,7 +246,7 @@ final class AppFlowController: UIViewController {
 
 and with removing when the child `FlowController` finishes
 
-```
+```swift
 extension AppFlowController: LoginFlowControllerDelegate {
   func loginFlowControllerDidFinish(_ flowController: LoginFlowController) {
     remove(childController: flowController)
@@ -261,7 +261,7 @@ extension AppFlowController: LoginFlowControllerDelegate {
 
 Usually you have an `AppCoordinator`, which is held by `AppDelegate`, as the root of your `Coordinator` chain. Based on login status, it will determine which `LoginController` or `MainController` will be set as the `rootViewController`, in order to do that, it needs to be injected a `UIWindow`
 
-```
+```swift
 window = UIWindow(frame: UIScreen.main.bounds)
 appCoordinator = AppCoordinator(window: window!)
 appCoordinator.start()
@@ -270,7 +270,7 @@ window?.makeKeyAndVisible()
 
 You can guess that in the `start` method of `AppCoordinator`, it must set `rootViewController` before `window?.makeKeyAndVisible()` is called.
 
-```
+```swift
 final class AppCoordinator: Coordinator {
   private let window: UIWindow
 
@@ -292,7 +292,7 @@ final class AppCoordinator: Coordinator {
 
 But with `AppFlowController`, you can treat it like a normal `UIViewController`, so just setting it as the `rootViewController`
 
-```
+```swift
 appFlowController = AppFlowController(
 window = UIWindow(frame: UIScreen.main.bounds)
 window?.rootViewController = appFlowController
@@ -311,7 +311,7 @@ What should we do in the `start` method of `LoginCoordinator`? Construct the ini
 
 We can pass `UIWindow` to `LoginCoordinator` but then it knows too much. One way is to construct `UINavigationController` from `AppCoordinator` and pass that to `LoginCoordinator`
 
-```
+```swift
 final class AppCoordinator: Coordinator {
   private let window: UIWindow
 
@@ -347,7 +347,7 @@ final class LoginCoordinator: Coordinator {
 
 `LoginFlowController` leverages `container view controller` so it fits nicely with the way `UIKit` works. Here `AppFlowController` can just add `LoginFlowController` and `LoginFlowController` can just create its own `embeddedNavigationController`.
 
-```
+```swift
 final class AppFlowController: UIViewController {
   private func startLogin() {
     let loginFlowController = LoginFlowController(
@@ -388,7 +388,7 @@ final class LoginFlowController: UIViewController {
 
 Sometimes we want a quick way to bubble up message to parent `Coordinator`, one way to do that is to replicate `UIResponder` chain using `associated object` and protocol extensions, like [Inter-connect with Coordinator](http://aplus.rs/2017/highly-maintainable-app-architecture/)
 
-```
+```swift
 extension UIViewController {
 	private struct AssociatedKeys {
 		static var ParentCoordinator = "ParentCoordinator"

@@ -4,15 +4,15 @@ date: 2018-09-25 23:51:53
 category: iOS
 ---
 
-```
+```objective-c
 NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
-NSString *vison = infoDict[@"CFBundleVersion"];
-//    NSString *vison = @"1.2.5";
-NSString *vison2 = @"1.13.4";
-if ([vison compare:vison2 options:NSNumericSearch] == NSOrderedDescending)
+// App 版本
+NSString *version = infoDict[@"CFBundleVersion"];
+NSString *certainVersion = @"1.13.4";
+if ([version compare:certainVersion options:NSNumericSearch] == NSOrderedDescending)
 {
-    NSLog(@"%@ is bigger",vison);
+    NSLog(@"%@ is bigger",version);
 } else {
-    NSLog(@"%@ is bigger",vison2);
+    NSLog(@"%@ is bigger",certainVersion);
 }
 ```

@@ -4,7 +4,7 @@ date: 2018-09-25 23:51:53
 category: iOS
 ---
 
-    > 作者是[John Sundell](https://twitter.com/johnsundell)，阅读[原文](https://www.swiftbysundell.com/posts/using-child-view-controllers-as-plugins-in-swift)
+> 阅读[原文](https://www.swiftbysundell.com/posts/using-child-view-controllers-as-plugins-in-swift)
 
 当有很多通用功能的时候，比如 loading 界面，报错弹框等，大部分人习惯性会创建一个基类`BaseViewController`，然后所有视图控制器都继承它：
 
@@ -120,7 +120,7 @@ class ListViewController: UITableViewController {
 
 创建`ErrorViewController`，当网络出现错误时，提示错误信息。它还包含一个重试按钮，所以我们再加一个`reloadHandler`闭包，当按钮被点击时执行：
 
-```
+```swift
 class ErrorViewController: UIViewController {
     var reloadHandler: () -> Void = {}
 }
