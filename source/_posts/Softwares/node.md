@@ -4,15 +4,15 @@ date: 2018-09-25 23:51:53
 category: Softwares
 ---
 
-# 环境搭建
-
-## 安装
+# 安装
 
 - 安装 [nvm](https://github.com/creationix/nvm)
 - 安装 node，使用 **lts** 稳定版本: `nvm install --lts`。
   > 如果已经用 nvm 安装过 node 了，现在要升级 node 并把已经安装过的全局 packages 一并迁移到新版本，那么需要使用一下命令：`nvm install v8.4.0 --reinstall-packages-from=v6.10.0`
 
 <!-- more -->
+
+# 依赖包管理器 npm 使用
 
 ## 配置淘宝镜像
 
@@ -32,9 +32,12 @@ npm config set registry https://registry.npm.taobao.org --global
 npm config set disturl https://npm.taobao.org/dist --global
 ```
 
-## 更新全局包
+## 使用小提示
 
-`npm update -g`
+- `npm home xxx`：打开浏览器访问模块主页
+- `npm outdated`： 检查新版本
+- `npm prune`： 删除`package.json`不存在的模块
+- `npm ls --depth 0`： 查看当前安装的模块，不包括模块的依赖
 
 # 模块
 
